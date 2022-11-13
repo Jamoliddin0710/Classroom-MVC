@@ -1,0 +1,37 @@
+﻿@*@model List<Classroom_Task_11._11._22.Entity.User>
+<table border:"1px">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>PhoneNumber</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserName</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>
+                </tr>
+            }
+         }
+    </tbody>
+
+</table>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+    }
+</style>
+
+*@
